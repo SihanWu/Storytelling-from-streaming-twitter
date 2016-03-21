@@ -1,6 +1,6 @@
 # track_tweet_and_api
 
-1.Build a system to track a distrbution or set of distributions that capture something you find interesting about a stream of data. (40%)
+### 1.Build a system to track a distrbution or set of distributions that capture something you find interesting about a stream of data. (40%)
 
 Inspired by professor's example:citibike. I decided to utilize twitter streaming api, and single information twitter api returns is something like this:
 
@@ -29,7 +29,7 @@ def count_number(file):
 to extract location and source url information from what api returns.
 And this is the function of program twtw.py. And then i used insert.py to insert location by source, put them in conn1, and print out on terminal. So here, i completed the task of building a system to track a distrbution. The detailed processing is in api part.
 
-2. Build an API (40%) that can return:
+### 2. Build an API (40%) that can return:
 
 the rate of the stream
 the distributions you assembled in the first part of this exercise
@@ -58,7 +58,7 @@ then i can see result like {"source": "www.facebook.com", "location": "London", 
 serious must happen and webpage will show "abnormal rate" because normal rate in my program should be about 0.005s(that's alert system)
 
 
-3.Extend the alerting system you built in Exercise 2 to alert on changes in entropy or unlikey new messages. (10%)
+### 3.Extend the alerting system you built in Exercise 2 to alert on changes in entropy or unlikey new messages. (10%)
 @app.route("/rate")
 def showrate():
     rate = frate()
@@ -69,7 +69,7 @@ def showrate():
     return json.dumps({"rate":rate[0]})
 the code above shows if rate is greater than 0.05s then something serious must happen and webpage will show "abnormal rate" because normal rate in my program should be about 0.005s after my design and multiple tests.
 
-4. Build a webpage that displays the current distribution(s) stored in your system by querying the API you build in the second part of this exercise. (10%)
+### 4. Build a webpage that displays the current distribution(s) stored in your system by querying the API you build in the second part of this exercise. (10%)
 
 Like what i showed in previous part, after we run location_prob.py in terminal, we can input these urls to show function.
 
