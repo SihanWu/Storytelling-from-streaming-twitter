@@ -8,6 +8,7 @@ Inspired by professor's example:citibike. I decided to utilize twitter streaming
 
 
 It includes too much information, to simplify, I decided to keep track of the location and source infomation(url) of tweets which includes "python" or"java" or "streaming" in their sentences, so i used :
+
 def count_number(file):    
     tweets_data = []
     tweets_file = open(file, "r")
