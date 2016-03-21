@@ -17,7 +17,6 @@ def count_number(file):
             tweet = json.loads(line)
             o = urlparse.urlparse(tweet["user"]["url"])
             url = o.netloc
-            
             if tweet["user"]["location"]=="null":
                 continue
             print json.dumps({"location":tweet["user"]["location"],"source":url})
